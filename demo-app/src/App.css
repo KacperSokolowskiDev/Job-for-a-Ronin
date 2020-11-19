@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
-}
+.HeaderImage {
+  width: 90vw;
+  height: 100vh;
+  background-image: url('./asset/backgroundJapan.jpg');
+  background-size: cover;
+  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.Header-container {
   display: flex;
   flex-direction: column;
+  height: 50vh;
+  width: 50vw;
+  justify-content: space-around;
+  padding-left: 100px;
+}
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.header-button{
+  border-radius: 10%;
+  width: 300px;
+  height: 50px;
+  border: 0.1rem ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
