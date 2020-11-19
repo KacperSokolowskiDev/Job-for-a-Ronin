@@ -60,3 +60,4 @@ const samurai = [
     skills: ["Master of the sword", "Veteran"],
   },
 ];
+
