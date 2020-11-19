@@ -36,5 +36,17 @@
   border: 0.1rem ;
 }
 
+.search-bar {
+  display: flex;
+  width: 80vw;
+  border: 1px solid #C8C8C8;
+  border-radius: 5px;
+  height: 100px;
+  background-color: #e7edf2;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 
