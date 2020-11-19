@@ -19,7 +19,8 @@ import { Link } from 'react-router-dom'
 import Chip from '@material-ui/core/Chip';
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 345,
+    width: 250,
+    margin:10
 
   },
   media: {
@@ -38,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     backgroundColor: red[500],
+
   },
   isFavorite: {
       color:'red'
@@ -71,14 +73,21 @@ const JobCard = () => {
           title='name'
           subheader='subHeader'
         />
-        <CardMedia
-          className={classes.media}
-          image='https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI'
-          title="Paella dish"
-        />
+        <div style={{
+            width:80,
+            height:80,
+            backgroundImage:`url(https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI)`,
+            backgroundSize:"cover",
+            marginLeft:15
+
+        }}></div>
+ 
         <CardContent>
+            <Typography variant="h5" component="h2">
+            bodygard-shogun
+            </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            rating :
+            province edo
           </Typography>
         </CardContent>
         <CardActions disableSpacing>

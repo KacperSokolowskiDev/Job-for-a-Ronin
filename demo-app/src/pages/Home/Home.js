@@ -5,7 +5,7 @@ import {
      TextField
   } from '@material-ui/core'
 import { Link } from 'react-router-dom';
-import JobsCard from '../../components/Job-card/JobCard'
+
 
 const Home = () => {
     return (
@@ -23,7 +23,7 @@ const Home = () => {
                 </div>
         </div>
             <div className="HeaderImage">
-                <JobsCard />
+                
             </div>
         </div>
         </div>
