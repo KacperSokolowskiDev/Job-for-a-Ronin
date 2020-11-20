@@ -1,5 +1,6 @@
-const lords = [
+const lordsList = [
   {
+    id: 1,
     name: "Tokugawa Hidetada",
     img: "Tokugawa_Hidetada.jpg",
     status: "2nd Shogun of the Tokugawa Dynasty",
@@ -12,6 +13,7 @@ const lords = [
     seeks: "Samurai",
   },
   {
+    id: 2,
     name: "Fukushima Masanori",
     status: "Japanese daimyō of the late Sengoku period to early Edo period",
     img: "Masanori_Fukushima.jpeg",
@@ -22,6 +24,7 @@ const lords = [
     seeks: "Samurai",
   },
   {
+    id: 3,
     name: "Hachisuka Iemasa",
     status: "Japanese daimyō of the early Edo period",
     img: "Hachisuka_Iemasa.jpg",
@@ -32,6 +35,7 @@ const lords = [
     seeks: "Healer",
   },
   {
+    id: 4,
     name: "Date Masamune",
     status: "Regional ruler of Japan's Azuchi–Momoyama Period",
     img: "Date_Masamune.jpg",
@@ -39,11 +43,14 @@ const lords = [
     description:
       "Heir to a long line of powerful daimyō in the Tōhoku region, he went on to found the modern-day city of Sendai. An outstanding tactician, he was made all the more iconic for his missing eye, as Masamune was often called dokuganryū, or the One-Eyed Dragon of Ōshu",
     requirments: [
-      { mission: "Preparation to defend the ancestral land of the Date Clan" },
+      {
+        mission: "Preparation to defend the ancestral land of the Date Clan",
+      },
     ],
     seeks: "Samurai",
   },
   {
+    id: 5,
     name: "Matsuoka Shoan",
     status: "Japanese Confucianist and herbalist",
     img: "Matsuoka_Shoan.jpg",
@@ -56,9 +63,10 @@ const lords = [
     seeks: "Samurai",
   },
   {
+    id: 6,
     name: "Watanabe Kazan",
     status: "Japanese painter, scholar",
-    img: "Watanabe.Kazan.jpg",
+    img: "Watanabe_Kazan.jpg",
     city: "Tahara",
     description:
       " Watanabe himself served the lord of Tahara as a senior councilor, one of his achievements being said to be protecting the domain from even a single death from starvation during the Tenpō famine. He was heavily influenced by the artistic styles of the West, forming a unique style with elements of Japanese and European art.",

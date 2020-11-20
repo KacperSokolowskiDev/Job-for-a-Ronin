@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Logo from "./ronin.png";
 import { Button, Box } from "@material-ui/core";
+import { Link } from "react-router-dom";
+
 const Nav = styled.nav`
   display: flex;
   position: relative;
@@ -50,9 +52,11 @@ const Navbar = () => {
             Find a Job
           </Button>
         </Box>
-        <Button variant="outlined" color="secondary">
-          My Profile
-        </Button>
+        <Link to="/my-profile/1">
+          <Button variant="outlined" color="secondary">
+            My Profile
+          </Button>
+        </Link>
       </BoxButton>
     </Nav>
   );
