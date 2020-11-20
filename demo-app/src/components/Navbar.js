@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Logo from "./ronin.png";
-import { Button, Box } from "@material-ui/core";
+import { Button, Box, ButtonBase } from "@material-ui/core";
 const Nav = styled.nav`
   display: flex;
   position: relative;
@@ -37,7 +37,7 @@ const NameLogo = styled.div`
 //color: #e7dede;
 //background-color: #5b74cc;
 
-const Navbar = () => {
+const Navbar = ({buttons}) => {
   return (
     <Nav>
       <NameLogo>
@@ -45,14 +45,13 @@ const Navbar = () => {
         <Title>Job for a Ronin</Title>
       </NameLogo>
       <BoxButton>
-        <Box mr={5}>
-          <Button variant="outlined" color="secondary">
-            Find a Job
-          </Button>
-        </Box>
-        <Button variant="outlined" color="secondary">
-          My Profile
-        </Button>
+        {buttons.map((button,i) => (
+          <Box mr={5} key={i}>
+            <Button variant="outlined" color="secondary">
+              {button}
+            </Button>
+          </Box>
+      ))}
       </BoxButton>
     </Nav>
   );

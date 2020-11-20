@@ -15,11 +15,13 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 import { Link } from 'react-router-dom'
 import Chip from '@material-ui/core/Chip';
+//import image from './Date_Masamune.jpg'
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 250,
+    width: 270,
     margin:10
 
   },
@@ -48,14 +50,18 @@ const useStyles = makeStyles((theme) => ({
       color:'grey'
   }
 }));
-const JobCard = () => {
-
+const JobCard = ({lord, searchVal, search}) => {
+    const [image,setImage] = React.useState(null)
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
   
     const handleExpandClick = () => {
       setExpanded(!expanded);
     };
+
+    React.useEffect(() => {
+        setImage(require('../../assets/lords-photo/'+lord.img))
+    },[])
   
     return (
       <Card className={classes.root}>
@@ -70,46 +76,28 @@ const JobCard = () => {
               <MoreVertIcon />
             </IconButton>
           }
-          title='name'
-          subheader='subHeader'
+          title={lord.name}
+          subheader={lord.status}
         />
-        <div style={{
+       {image ? <img src={image.default} style={{
             width:80,
             height:80,
-            backgroundImage:`url(https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI)`,
-            backgroundSize:"cover",
-            marginLeft:15
+            marginLeft:15,
+            objectFit:"cover"
 
-        }}></div>
+        }}/>: ""}
  
         <CardContent>
             <Typography variant="h5" component="h2">
-            bodygard-shogun
+            seeks: {lord.seeks}
             </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            province edo
+            province :{lord.city}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
           <IconButton   aria-label="add to favorites">
-            <FavoriteIcon />
-          </IconButton>
-          <IconButton aria-label="share" label='detail'>
-            <ShareIcon />
-          </IconButton>
-          
-          <IconButton >
-           
-          </IconButton>
-          <IconButton
-            className={clsx(classes.expand, {
-              [classes.expandOpen]: expanded,
-            })}
-            onClick={handleExpandClick}
-            aria-expanded={expanded}
-            aria-label="show more"
-          >
-            <ExpandMoreIcon />
+            <PlaylistAddIcon/>
           </IconButton>
         </CardActions>
       </Card>
