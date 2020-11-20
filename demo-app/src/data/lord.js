@@ -1,8 +1,8 @@
 const lords = [
-  {
+  { id:1,
     name: "Tokugawa Hidetada",
     img: "Tokugawa_Hidetada.jpg",
-    status: "2nd Shogun of the Tokugawa Dynasty",
+    status: "2nd Shogun",
     city: "Edo",
     description:
       "He is the third son of Tokugawa Ieyasu, the first shōgun of the Tokugawa shogunate.",
@@ -11,9 +11,10 @@ const lords = [
     ],
     seeks: "Samurai",
   },
-  {
+  { 
+    id:2,
     name: "Fukushima Masanori",
-    status: "Japanese daimyō of the late Sengoku period to early Edo period",
+    status: "Japanese daimyō",
     img: "Masanori_Fukushima.jpeg",
     city: "Ama, Owari Province",
     description:
@@ -22,8 +23,9 @@ const lords = [
     seeks: "Samurai",
   },
   {
+    id:3,
     name: "Hachisuka Iemasa",
-    status: "Japanese daimyō of the early Edo period",
+    status: "Japanese daimyō",
     img: "Hachisuka_Iemasa.jpg",
     city: "Tokushima",
     description:
@@ -32,8 +34,9 @@ const lords = [
     seeks: "Healer",
   },
   {
+    id:4,
     name: "Date Masamune",
-    status: "Regional ruler of Japan's Azuchi–Momoyama Period",
+    status: "Regional ruler",
     img: "Date_Masamune.jpg",
     city: "Yonezawa",
     description:
@@ -44,6 +47,7 @@ const lords = [
     seeks: "Samurai",
   },
   {
+    id:5,
     name: "Matsuoka Shoan",
     status: "Japanese Confucianist and herbalist",
     img: "Matsuoka_Shoan.jpg",
@@ -56,9 +60,10 @@ const lords = [
     seeks: "Samurai",
   },
   {
+    id:6,
     name: "Watanabe Kazan",
     status: "Japanese painter, scholar",
-    img: "Watanabe.Kazan.jpg",
+    img: "Watanabe_Kazan.jpg",
     city: "Tahara",
     description:
       " Watanabe himself served the lord of Tahara as a senior councilor, one of his achievements being said to be protecting the domain from even a single death from starvation during the Tenpō famine. He was heavily influenced by the artistic styles of the West, forming a unique style with elements of Japanese and European art.",
@@ -71,3 +76,5 @@ const lords = [
     seeks: "Samurai",
   },
 ];
+
+export default lords

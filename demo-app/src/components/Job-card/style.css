@@ -1,0 +1,7 @@
+.image {
+    width:80;
+    height:80;
+    background-image: url('../../assets/lords-photo/Date_Masamune.jpg');
+    background-size:"cover";
+    margin-Left:15;
+}
