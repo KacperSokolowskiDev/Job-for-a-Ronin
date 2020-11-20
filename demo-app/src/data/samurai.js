@@ -1,5 +1,7 @@
+
 const samurai = [
   {
+    id:1,
     name: "Hattori Hanzō",
     status: "Famous Ninja and Samurai",
     img: "Hattori_Hanzo.jpg",
@@ -10,6 +12,7 @@ const samurai = [
     skills: ["Ninja Arts", "Master of the sword", "Fearless Tactics"],
   },
   {
+    id: 2,
     name: "Miyamoto Musashi",
     status: "Undefeated Samurai",
     img: "Musashi.jpg",
@@ -20,16 +23,18 @@ const samurai = [
     skills: ["Undefeated Duelist", "Master of the sword"],
   },
   {
+    id: 3,
     name: "Sanada Yukimura",
     status: "Japanese Samurai",
     img: "Sanada_Yukimura.jpg",
     pseudo: "Crimson Demon of War",
     city: "Zenmyosho-In",
     description:
-      "In 1600, before the Battle of Sekigahara, Tokugawa Ieyasu rallied various daimyōs to attack Uesugi Kagekatsu. The Sanada clan complied as well, but when Ishida Mitsunari decided to challenge Ieyasu, Masayuki and Yukimura joined the western forces, parting ways with Masayuki's eldest son and Yukimura's brother, Nobuyuki, who joined the eastern forces. It has been said that at first Yukimura followed Ieyasu but, after Ieyasu tried to seize his territory he betrayed Ieyasu. The true motive of Masayuki and Yukimura's decision is disputed with many theories, but there are two main schools of thought: in one, Masayuki made the decision (and Yukimura agreed); he expressed the willingness to take a gamble, so that if he were to join the weak side and win the battle, the Sanada would gain much more power. The other theory is the opposite where they planned a safety net; Masayuki, Yukimura, and Nobuyuki discussed the situation when Ieyasu asked them to state their allegiance clearly, and they decided to join separate sides, so that, regardless of the outcome of the battle, the Sanada clan would survive.",
+      "In 1600, before the Battle of Sekigahara, Tokugawa Ieyasu rallied various daimyōs to attack Uesugi Kagekatsu. The true motive of Masayuki and Yukimura's decision is disputed with many theories, in one, Masayuki made the decision (and Yukimura agreed); he expressed the willingness to take a gamble, so that if he were to join the weak side and win the battle, the Sanada would gain much more power. The other theory is the opposite where they planned a safety net; Masayuki, Yukimura, and Nobuyuki discussed the situation when Ieyasu asked them to state their allegiance clearly, and they decided to join separate sides, so that, regardless of the outcome of the battle, the Sanada clan would survive.",
     skills: ["Master of the sword"],
   },
   {
+    id: 4,
     name: "Hijikata Toshizō",
     status: "As Vice-Commander of the Shinsengumi",
     img: "Hijikata_Toshizo.jpg",
@@ -40,6 +45,7 @@ const samurai = [
     skills: ["Master of the sword"],
   },
   {
+    id: 5,
     name: "Fūma Kotarō",
     status: "Leader of the ninja Fūma clan",
     pseudo: "Rappa of the Hojo Clan",
@@ -50,6 +56,7 @@ const samurai = [
     skills: ["Ninja Arts"],
   },
   {
+    id: 6,
     name: "Honda Tadakatsu",
     status: "Japanese samurai, general and later a daimyō",
     pseudo: "The Warrior who surpassed Death itself",
@@ -60,4 +67,7 @@ const samurai = [
     skills: ["Master of the sword", "Veteran"],
   },
 ];
+
+
+export default samurai;
 

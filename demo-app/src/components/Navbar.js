@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Logo from "./ronin.png";
 import { Button, Box, ButtonBase } from "@material-ui/core";
+import { Link } from "react-router-dom";
+
 const Nav = styled.nav`
   display: flex;
   position: relative;

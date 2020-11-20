@@ -1,3 +1,4 @@
+
 const lords = [
   { id:1,
     name: "Tokugawa Hidetada",
@@ -14,7 +15,6 @@ const lords = [
   { 
     id:2,
     name: "Fukushima Masanori",
-    status: "Japanese daimyō",
     img: "Masanori_Fukushima.jpeg",
     city: "Ama, Owari Province",
     description:
@@ -77,4 +77,6 @@ const lords = [
   },
 ];
 
+
 export default lords
+
