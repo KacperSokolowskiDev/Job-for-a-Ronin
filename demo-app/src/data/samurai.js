@@ -1,9 +1,10 @@
-const samuraiList = [
+
+const samurai = [
   {
-    id: 1,
+    id:1,
     name: "Hattori Hanzō",
     status: "Famous Ninja and Samurai",
-    img: "../assets/samurai-photo/Hattori_Hanzo.jpg",
+    img: "Hattori_Hanzo.jpg",
     pseudo: "Oni no Hanzō",
     city: "Edo",
     description:
@@ -67,4 +68,6 @@ const samuraiList = [
   },
 ];
 
-export default samuraiList;
+
+export default samurai;
+

@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <Navbar />
+          <Navbar  buttons={['MY PROFILE']}/>
           <Home />
         </Route>
         <Route path="/jobs">
